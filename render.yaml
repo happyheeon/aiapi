@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-api
+    env: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
